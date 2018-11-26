@@ -1,7 +1,7 @@
 # ebrscraper
 Scraper tailored for Ontario's Environmental Registry
 
-
+This project's front-end has been taken down. It will be put back up once the ERO's rework is complete. Learn more aboutthe ERO at https://ero.ontario.ca/
 
 Currently scrapes instrument notices from https://www.ebr.gov.on.ca posted after the last time the scraper ran. Stores data on this  googlesheet:
 
