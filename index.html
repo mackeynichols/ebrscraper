@@ -1,0 +1,68 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>      
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js" ></script>
+  <meta name="viewport" content="width=device-width">
+  
+  <!-- Latest compiled and minified CSS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+   <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+
+  <script src = "app.js"></script>
+  <script src = "switch.js"></script>
+
+</head>
+<body>
+  <div class = "container">
+    <hr>
+    <div id = "header">
+      
+    </div>
+    <div id = "content" style = "height: 300px">
+      <canvas id = "myChart"></canvas>
+    </div>
+    <hr>
+    <div id = "picker">
+      <div class = "row">
+        <div class = "col-xs-6">
+          <select class = "form-control" id = "chartData">
+
+            <option selected = "selected" value = "gsx$keywords">Keywords</option>
+            <option value = "gsx$instrument">Instruments</option>
+            <option value = "gsx$proponent">Proponents</option>            
+          </select>
+        </div>
+        <div class = "col-xs-6">
+          <select class = "form-control" id = "chartType">
+            <option selected = "selected" value = "pie">Pie Chart</option>
+            <option value = "bar">Bar Chart</option>
+            <option value = "map">Map</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class = "well well-sm">
+      <p>
+        Hi!<br>
+        You're looking at a summary of EBR notices since November 2016.<br><br>
+        <b>The EBR</b>: Ontario's Environmental Registry<br>
+        <b>Instrument Types</b>: laws involved in regulating development of Ontario's natural resources<br>
+        <b>Proponents</b>: the individual(s) proposing development<br>
+        Learn more at <a href = "https://www.ebr.gov.on.ca/ERS-WEB-External/">The EBR Website</a>.
+        
+        
+      </p>
+    </div>
+  </div>
+  
+</body>
+</html>
